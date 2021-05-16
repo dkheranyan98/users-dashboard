@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+import Menu from './components/Menu/Menu';
+import Header from './components/Header/Header';
+import List from './components/Users/List';
+import Form from './components/Form/Form';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
+const App = () => {
+ const edit = useSelector((state) => state.global.edit)
+ const checkedUser = useSelector((state) => state.global.checkedUser);
+
+  const getcurrentPage = () => {
+    switch (edit) {
+        case 'editUser':
+            return <Form id={checkedUser} />;
+        case 'newUser':
+            return <Form id={''}/>;
+        default:
+            return <List />;
+    }
+};
+
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+        <Switch>
+          <Route path={'*'}> {getcurrentPage()} </Route>
+        </Switch>
+      <Menu />
     </div>
+    </Router>
   );
 }
 

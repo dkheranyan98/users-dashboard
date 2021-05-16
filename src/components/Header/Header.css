@@ -1,0 +1,10 @@
+.header {
+    height: 70px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.header_icons {
+    height: 30px;
+    float: right;
+    margin-right: 103px;
+    padding: 16px;
+}

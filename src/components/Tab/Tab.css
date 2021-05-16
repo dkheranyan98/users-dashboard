@@ -1,0 +1,31 @@
+.header_tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.header_divider {
+    width: 884px;
+    height: 2px;
+    left: 379px;
+    top: 113px;
+    background: #E1E6EC;
+}
+.header_tab p {
+    color: #2D3446;
+    font-size: 18px;
+    line-height: 21px;
+}
+.header_tab button {
+    width: 114px;
+    height: 36px;
+    background: #407EFF;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}

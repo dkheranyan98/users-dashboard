@@ -1,0 +1,33 @@
+.table_view {
+    margin-top: 30px;
+    margin-left: 23%;
+}
+.table_view > table{
+    position: absolute;
+    width: 1163px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #878787;
+}
+.user_img {
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    display: inline;
+}
+.table_header {   
+    background: #F1F3F5;
+    border-radius: 4px;
+}
+.table_header td {
+    height: 45px;
+    padding-left: 26px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.table_body td {
+    padding-left: 26px;
+    border-bottom: 1px solid #E9E9E9;
+}

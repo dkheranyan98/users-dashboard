@@ -1,0 +1,35 @@
+.menu_tab {
+    background-color: #2D3347;
+    position: absolute;
+    left: 0%;
+    right: 85%;
+    top: 0%;
+    bottom: 0%;
+}
+.tile_icon {
+    position: absolute;
+    left: 10%;
+    right: 87.99%;
+}
+.tile_title {
+    position: absolute;
+    left: 33.33%;
+    align-items: center;
+    display: flex;
+    padding: 22px;
+    color: #788195;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: Roboto;
+    font-style: normal;
+}
+.tile_container {
+    align-items: center;
+    display: flex;
+    padding: 22px;
+}
+.tab_header {
+    height: 70px;
+    background-color: #272D3E;
+}

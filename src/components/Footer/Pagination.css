@@ -1,0 +1,35 @@
+.footer_container {
+    display: flex;
+    margin-left: 23%;
+    position: absolute;
+    width: 1165px;
+    height: 121px;
+    top: 776px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;   
+}
+.pagination_container div {
+    padding: 15px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323332;
+}
+.all_users_count {
+    display: flex;
+    padding: 45px;
+    align-items: center;
+    font-weight: normal;
+    color: #878787;
+    font-size: 18px;
+    line-height: 21px;
+}
+.all_users_count p {
+    margin-left: 10px;
+    color: #407EFF;
+    font-weight: bold;
+}
